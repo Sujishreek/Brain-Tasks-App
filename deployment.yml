@@ -1,0 +1,6 @@
+containers:
+- name: brain-tasks-app
+  image: 047447426147.dkr.ecr.us-east-1.amazonaws.com/brain-tasks-app:latest
+  ports:
+    - containerPort: 3000
+
