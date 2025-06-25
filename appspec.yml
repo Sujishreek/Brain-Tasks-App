@@ -1,0 +1,11 @@
+version: 0.0
+Resources:
+  - myApp:
+      Type: Kubernetes::Manifest
+      Properties:
+        ClusterName: brain-tasks-cluster
+        Namespace: default
+        Manifest:
+          - brain-tasks-deployment.yaml
+          - brain-tasks-service.yaml
+
